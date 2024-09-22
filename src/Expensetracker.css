@@ -1,0 +1,123 @@
+/* General styling */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+  }
+  
+  .heading h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .form input, .form button {
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+  
+  .form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form button:hover {
+    background-color: #218838;
+  }
+  
+  /* Monthly Expenses Display */
+  .monthly-expenses {
+    margin-top: 30px;
+    color: #333;
+  }
+  
+  .monthly-expenses h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .monthly-expenses ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .monthly-expenses li {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 123, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    animation: fadeInUp 0.8s forwards;
+  }
+  
+  .monthly-expenses li span {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  /* Expense list container */
+  .expense-list-container {
+    max-height: 200px; /* Set a fixed height for the list */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-top: 20px;
+    padding-right: 10px; /* Add some padding for smooth scrolling */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+  }
+  
+  .expenselist {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .expenselist li {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+  }
+  
+  .expenselist li span {
+    font-size: 1rem;
+  }
+  
+  .expenselist li button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .expenselist li button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
